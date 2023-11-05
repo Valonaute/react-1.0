@@ -1,18 +1,25 @@
 import React from "react";
 import { Component } from "react";
+import { useState } from "react";
 import Bikes from "./Bikes";
+import Wrapper from "./wrapper";
 
 class Mybikes extends Component {
+
     render() {
         return (
             <div>
-                <h1> {this.props.title } </h1>
-                <Bikes marque="Trek" couleur="Bleu" bg="'gray'"></Bikes>
-                <Bikes marque="Giant" couleur="Rouge" bg="'blue'"></Bikes>
-                <Bikes marque="Orbéa" couleur="Jaune" bg="'red'"></Bikes>
+                    <Bikes couleur="rouge" marque="Giant">
+                    </Bikes>  
+
+                    <Bikes couleur="bleu" marque="Trek">
+
+                    </Bikes>  
+
+                    <Bikes couleur="Vert" marque="Bianchi">
+                    </Bikes>  
             </div>
         )
     }
 }
-
 export default Mybikes;

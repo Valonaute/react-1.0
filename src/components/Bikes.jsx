@@ -1,16 +1,13 @@
 import React from "react";
+import Wrapper from "./wrapper";
+const Bikes = (props) => {
 
-const Bikes = ({marque, couleur}) => {
-
-    if(marque){
+    let {couleur, marque} = props;
     return (
-    <div style={ {backgroundColor: 'grey', width: '500px', padding: '10px', margin: "20px auto"}}>
-        <p>Marque : {marque} </p>
-        <p>Couleur : {couleur} </p>
-    </div>
+        <Wrapper>
+            <p> Couleur : {couleur}</p>
+            <p> Marque : {marque}</p>
+        </Wrapper>
     )
-} else {
-    return <p> Pas de Data ! </p>
-}
 }
 export default Bikes;
