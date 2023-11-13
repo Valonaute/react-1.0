@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Mycars from './Mycars';
 import './App.css';
 import Welcome from './Welcome';
+import Display from './Display';
 
 class App extends Component {
 
@@ -12,8 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Welcome />
-        <Mycars title={this.state.titre} />
+      <Display />
       </div>
     )
   }

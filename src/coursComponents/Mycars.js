@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import Car from './Cars'
 
 class Mycars extends Component {
@@ -49,7 +49,7 @@ class Mycars extends Component {
         const today = new Date().getFullYear();
         return (
             
-            <div>
+            <>
                 <h1>{this.props.title}</h1>
                     
                 <button onClick={this.addTenYears}> + 10 ans </button>
@@ -66,7 +66,7 @@ class Mycars extends Component {
                         )
                     })
                     }
-            </div>
+            </>
         )
     }
 }
