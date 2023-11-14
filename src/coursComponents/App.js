@@ -3,6 +3,7 @@ import Mycars from './Mycars';
 import './App.css';
 import Welcome from './Welcome';
 import Display from './Display';
+import Form from './Form';
 
 class App extends Component {
 
@@ -13,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      <Display />
+      <Form />
       </div>
     )
   }
